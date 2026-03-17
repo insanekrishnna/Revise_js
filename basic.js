@@ -471,8 +471,22 @@
 //     console.table(env.history);
 // });
 
+// function sum ( a , b , c){
+//     return a + b + c ;
+// }
+//  console.log(sum ( parseInt("5") , 10 , 15 ) );
+
+
 function sum ( a , b , c){
     return a + b + c ;
 }
 
- console.log(sum ( parseInt("5") , 10 , 15 ) );
+function mul ( a , b , c){
+    return a * b * c ;
+}
+
+function doo ( a , b , c , operation ){
+    return ( operation ( a , b , c ) );
+}
+
+ console.log(doo ( 5 , 5 ,5 , mul )) ;
