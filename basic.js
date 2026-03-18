@@ -500,10 +500,91 @@
 //     console.log('File content:', data);
 // });
 
-const delay = (ms) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
 
-// usage
-delay(2000).then(() => {
-  console.log("2 seconds done");
+// function hi( ){
+//     console.log("hi");
+// };
+
+// hi();
+
+// const  greet = ( name ) => {
+//     name();
+// }
+
+// greet( () => 
+//     console.log("Hello")
+//  );
+
+
+
+// const delay = (ms) =>
+//   new Promise((resolve) => setTimeout(resolve, ms));
+
+// // usage
+// delay(2000).then(() => {
+//   console.log("2 seconds done");
+// });
+
+
+// how to use new 
+// class User {
+//     constructor(name){
+//      this.name = name ;   
+//     }
+// }
+
+// const u1 = new User("Prat");
+// console.log( u1.name );
+
+// promise 
+
+// const pro = new Promise( ( resolve , reject ) => {
+//     const target = true;
+
+//     if ( target ){
+//     console.log("data loaded");
+//     } else {
+//         console.log( "rejected")
+//     }
+      
+// });
+
+// pro
+// .then((res) => {
+//     console.log("result");
+// })
+// .catch( (err) => {
+//     console.log("error");
+// })
+
+// const p = new Promise((resolve, reject) => {
+//   const success = true;
+
+//   if (success) {
+//     resolve("Data loaded");
+//   } else {
+//     reject("Error happened");
+//   }
+// });
+
+// p.then((result) => {
+//   console.log(result);
+// }).catch((error) => {
+//   console.log(error);
+// });
+
+
+function delay(ms) {
+return new Promise ( (resolve) => {
+setTimeout(resolve, ms );
 });
+};
+
+
+const pro = async function yupp() {
+    console.log("Start");
+    await delay(2000);
+    console.log("2 seconds later");
+};
+
+pro();
