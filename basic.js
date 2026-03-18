@@ -491,11 +491,19 @@
 
 //  console.log(doo ( 5 , 5 ,5 , mul )) ;
 
-const fs = require('fs');;
-fs.readFile('input.txt', 'utf-8', (err, data) => {
-    if (err) {
-        console.error('Error reading file:', err);
-        return;
-    }
-    console.log('File content:', data);
+// const fs = require('fs');;
+// fs.readFile('input.txt', 'utf-8', (err, data) => {
+//     if (err) {
+//         console.error('Error reading file:', err);
+//         return;
+//     }
+//     console.log('File content:', data);
+// });
+
+const delay = (ms) =>
+  new Promise((resolve) => setTimeout(resolve, ms));
+
+// usage
+delay(2000).then(() => {
+  console.log("2 seconds done");
 });
