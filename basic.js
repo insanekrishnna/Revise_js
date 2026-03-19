@@ -574,17 +574,42 @@
 // });
 
 
-function delay(ms) {
-return new Promise ( (resolve) => {
-setTimeout(resolve, ms );
-});
+// function delay(ms) {
+// return new Promise ( (resolve) => {
+// setTimeout(resolve, ms );
+// });
+// };
+
+
+// const pro = async function yupp() {
+//     console.log("Start");
+//     await delay(2000);
+//     console.log("2 seconds later");
+// };
+
+// pro();
+
+class Rec{
+    constructor ( w , h , c ){
+        this.width = w ;
+        this.height = h ;
+        this.color = c ;    
+    }
+
+    area ( w , h ){
+        return w * h ;
+    }
+
+
+    paint ( c ){
+       return `painting with ${c} color` ;
+    }       
 };
 
 
-const pro = async function yupp() {
-    console.log("Start");
-    await delay(2000);
-    console.log("2 seconds later");
-};
+const r1 = new Rec ();
 
-pro();
+const ar = r1.area(10,20);
+const pa = r1.paint("red");
+console.log ( ar);
+console.log ( pa);
