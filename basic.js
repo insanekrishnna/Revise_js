@@ -615,23 +615,31 @@
 // console.log ( pa);
 
 
-class Rec {
-    constructor(w, h, c) {
-        this.width = w;
-        this.height = h;
-        this.color = c;
-    }
+// class Rec {
+//     constructor(w, h, c) {
+//         this.width = w;
+//         this.height = h;
+//         this.color = c;
+//     }
 
-    area() {
-        return this.width * this.height;
-    }
+//     area() {
+//         return this.width * this.height;
+//     }
 
-    paint() {
-        console.log(`painting with ${this.color} color`);
-    }
-}
+//     paint() {
+//         console.log(`painting with ${this.color} color`);
+//     }
+// }
 
-const r1 = new Rec(10, 20, "red");
+// const r1 = new Rec(10, 20, "red");
 
-console.log(r1.area());
-r1.paint();
+// console.log(r1.area());
+// r1.paint();
+
+const date = new Date ( );
+console.log(date.getMilliseconds());
+
+const map = new Map ( );
+map.set("name" , "Pratham");
+map.set("age" , 25);
+console.log(map.get("name"));
