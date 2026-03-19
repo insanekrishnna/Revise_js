@@ -589,27 +589,49 @@
 
 // pro();
 
-class Rec{
-    constructor ( w , h , c ){
-        this.width = w ;
-        this.height = h ;
-        this.color = c ;    
+// class Rec{
+//     constructor ( w , h , c ){
+//         this.width = w ;
+//         this.height = h ;
+//         this.color = c ;    
+//     }
+
+//     area ( w , h ){
+//         return w * h ;
+//     }
+
+
+//     paint ( c ){
+//        return `painting with ${c} color` ;
+//     }       
+// };
+
+
+// const r1 = new Rec ();
+
+// const ar = r1.area(10,20);
+// const pa = r1.paint("red");
+// console.log ( ar);
+// console.log ( pa);
+
+
+class Rec {
+    constructor(w, h, c) {
+        this.width = w;
+        this.height = h;
+        this.color = c;
     }
 
-    area ( w , h ){
-        return w * h ;
+    area() {
+        return this.width * this.height;
     }
 
+    paint() {
+        console.log(`painting with ${this.color} color`);
+    }
+}
 
-    paint ( c ){
-       return `painting with ${c} color` ;
-    }       
-};
+const r1 = new Rec(10, 20, "red");
 
-
-const r1 = new Rec ();
-
-const ar = r1.area(10,20);
-const pa = r1.paint("red");
-console.log ( ar);
-console.log ( pa);
+console.log(r1.area());
+r1.paint();
