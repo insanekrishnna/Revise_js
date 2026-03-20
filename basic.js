@@ -636,10 +636,21 @@
 // console.log(r1.area());
 // r1.paint();
 
-const date = new Date ( );
-console.log(date.getMilliseconds());
+// const date = new Date ( );
+// console.log(date.getMilliseconds());
 
-const map = new Map ( );
-map.set("name" , "Pratham");
-map.set("age" , 25);
-console.log(map.get("name"));
+// const map = new Map ( );
+// map.set("name" , "Pratham");
+// map.set("age" , 25);
+// console.log(map.get("name"));
+
+
+function w3 (resolve ){
+    setTimeout( resolve , 2000 );
+}
+
+function main ( ){
+    console.log("Start");
+}
+
+w3(main);
